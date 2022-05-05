@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hello PyScript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - numpy
+        - matplotlib
+    </py-env>
+</head>
+<body>
+ Hello I'm Doctor Strange from earth <label id='multiverse_id'></label>
+<py-script>
+    pyscript.write('multiverse_id', 616)
+</py-script>  
+<div id="plot"></div>
+
+<py-script crossorigin="anonymous" src="http://127.0.0.1:8000/simple_plot.py" output="plot"></py-script>  
+</body>
+</html>
